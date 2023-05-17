@@ -1,0 +1,913 @@
+body {
+    position: relative;
+    margin: 0;
+    top: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Primary: #1e90ff;
+    --Seconday: rgb(211, 241, 243);
+    --accent: rgb(232, 137, 86);
+
+}
+
+
+/* intor  */
+#intro {
+    height: 87vh;
+    background-color: #444;
+    background-image: url(../images/homepage/intro_pic.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(42, 75, 104);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+}
+
+#company-name {
+    padding-top: 0.4em;
+    padding-left: 2em;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#company-name a,
+nav a {
+    text-decoration: none;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#vital-events {
+    font-family: 'Dancing Script', sans-serif;
+    color: rgb(252, 88, 0);
+    letter-spacing: 3px;
+}
+#vital-events:hover{
+    color: white;
+}
+
+nav a {
+    font-family: Montserrat, sans-serif;
+    color: rgb(252, 88, 0);
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+nav a:hover {
+    color: white;
+    /* outline: 1px solid white; */
+}
+
+#nav-login {
+    /* color: white;
+    outline: 1px solid white; */
+    color:rgb(252, 88, 0);
+    outline: 1px solid rgb(252, 88, 0);
+    padding: .6em .7em;
+
+}
+
+#nav-login:hover {
+    background-color: rgb(252, 88, 0) ;
+    color: white;
+    outline: none;
+}
+
+/*End of header=================================*/
+.moto {
+    color: rgb(252, 88, 0);
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moto p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.moto .p-w {
+    margin-bottom: -.3rem;
+}
+
+.moto .p-d {
+    margin-top: -.5rem;
+}
+
+.moto h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 98, 13);
+    font-size: 4.5rem;
+    /* margin-bottom: -4rem; */
+    letter-spacing: 15px;
+    outline: 5px solid white;
+    outline-offset: 0.25em;
+    display: inline-block;
+    margin: 0.5em;
+}
+
+.moto span {
+    color: red;
+}
+
+.footer {
+    height: 40vh;
+    background-color: rgb(255, 89, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 0;
+    color: rgb(5, 5, 74);
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.footer-links a {
+    color: white;
+}
+
+
+.soc-media-icons {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+}
+
+.soc-media-icons a {
+    font-size: 1rem;
+    /* margin: em; */
+}
+
+.footer h3 {
+    color: rgb(5, 5, 74);
+}
+
+/*===========================================================*/
+.service-containor {
+    background-color: rgb(42, 75, 104);
+    height: 100vh;
+    /* margin: 1em .5em; */
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #e0e0e0;
+    border-radius: 0.5em;
+    height: 30vh;
+    flex-basis: 40%;
+    margin: 1.5em;
+}
+
+.service-item a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-item:hover {
+    background-color: blue;
+}
+
+.service-item a:hover {
+    color: white;
+}
+
+.openhr-containor {
+    background-color: rgb(42, 75, 104);
+    width: 70%;
+    margin-inline: auto;
+    margin-top: -15px;
+    padding: 6rem 3rem 3rem;
+    border-radius: .5em;
+    margin-bottom: 2em;
+    box-shadow: .4rem .4rem .5rem rgb(255, 89, 0), -.4rem -.4rem .5rem rgb(255, 89, 0);
+}
+
+.openhr {
+    background-color: white;
+    height: 55vh;
+    border: 0.5px solid rgb(90, 87, 87);
+    width: 90%;
+    margin-inline: auto;
+    padding: 2em;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.openhr-containor h1 {
+    color: white;
+}
+
+.openhr-containor .p {
+    color: white;
+    width: 80%;
+    /* margin: .3em auto; */
+}
+
+.ul-open {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.li-open {
+    margin-bottom: 1.5em;
+
+}
+
+/* 
+.two-containor{
+    background-color: #251c4a;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.two-item{
+    background-color: white;
+    height: 150px;
+    width: 30%;
+    margin: 3rem;
+    border-bottom-right-radius: 4rem;
+} */
+
+
+
+
+
+
+
+
+/* for nav-bar and header  */
+.header {
+    /* height: 4rem; */
+    /* border: 1rem solid red; */
+    background-color: var(--Seconday);
+    /* opacity: 1; */
+    margin: 0;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header a:hover {
+    color: rgb(14, 56, 70);
+    background-color: var(--Seconday);
+}
+
+.div-logo {
+    outline: 3px solid red;
+    width: 5rem;
+    margin-left: 1rem;
+    height: 2.5rem;
+    position: fixed;
+    z-index: 4;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul {
+    display: flex;
+    margin-top: -3px;
+    padding: .81rem;
+    /* outline:3px solid green; */
+    list-style-type: none;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.li-one {
+    margin-left: auto;
+}
+
+.li-last {
+    margin-right: .31rem;
+}
+
+.li>a {
+    /* color: rgb(180, 229, 245);   */
+    padding: .5rem;
+    /* makes the nav square clickale */
+}
+
+.li {
+    padding: .1rem .31rem;
+    background-color: rgb(64, 141, 167);
+    border-radius: .2rem;
+    outline: 1px solid rgb(64, 141, 167);
+}
+
+li:hover {
+    cursor: pointer;
+    /* outline: 2px solid rgb(39, 94, 112); */
+    background-color: var(--Seconday);
+    color: rgb(14, 56, 70);
+    /* outline: 2px solid rgb(39, 94, 112); */
+}
+
+.one {
+    width: 80%;
+    margin: .3rem auto;
+}
+
+
+/*  for add-add adding icon  */
+.add-add {
+    margin-left: 1rem;
+    padding: .3rem 2rem;
+    /* outline: 3px solid red; */
+    color: black;
+    border-radius: .3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(45, 171, 212);
+
+}
+
+.add-add:hover {
+    background-color: rgb(98, 206, 241);
+}
+
+/* ******************************************************************************  */
+/* for choice */
+.choice {
+    /* outline: 3px solid red; */
+    padding: 2rem;
+    /* height: 120%; */
+    /* height: 80vh; */
+    /* outline: 2px solid red; */
+    margin: 3rem 2rem;
+    display: flex;
+    /* background-color: red; */
+    /* background-color: wheat; */
+    /* background-color: red; */
+    /* box-shadow: .2rem .2rem .5rem rgb(255, 89, 0), -.2rem -.2rem .5rem rgb(255, 89, 0); */
+    border-radius: .3rem;
+    gap: 3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.choice-part>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    /* color: rgb(255, 89, 0); */
+    /* color: #044e97; */
+    /* makes the whole square clickable  */
+    /* outline: 3px solid red; */
+}
+
+.choice-part {
+    font-size: 180%;
+    border-radius: .3rem;
+    outline: 2px solid green;
+    /* background-color: rgb(64, 141, 167); */
+    /* padding: 3rem .3rem; */
+    min-width: 40%;
+    height: 9em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* for iamge */
+    /* background-color:grey;
+    background-repeat: no-repeat;
+    background-size:contain; 
+    background-position: center center;
+    background-blend-mode: lighten; 
+    background-size: cover;    */
+    overflow: hidden;
+
+}
+
+/* add image background */
+.choice-part a {
+
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 90, 1);
+    font-size: 1.5em;
+    /* background-image: url("../images/cc.png"); */
+
+
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: lighten;
+
+    /* background-position: center; */
+    /* background-size: cover; */
+    transition: 1.2s;
+}
+
+.choice-part a:hover {
+    transform: scale(1.2);
+    background-color: none;
+    background-blend-mode: normal;
+    color: rgb(255, 90, 1);
+}
+
+.choice-one a {
+    background-image: url("../images/copy.jpg");
+}
+
+.choice-two a {
+    background-image: url("../images/marr.png");
+}
+
+.choice-three a {
+    background-image: url("../images/child.png");
+}
+
+.choice-four a {
+    background-image: url("../images/death.png");
+}
+
+/* ************************************************************* */
+/* for form */
+.container {
+    width: 70%;
+    position: relative;
+    top: 2rem;
+    align-items: center;
+    outline: 5px solid lightgrey;
+    margin: 2rem auto 4rem auto;
+    box-shadow: .5rem .5rem .5rem black, -.5rem -.5rem .5rem black;
+    border-radius: .63rem;
+    padding: .5rem 1.5rem;
+}
+
+.part {
+    color: rgbf(41, 110, 156);
+    font-weight: bold;
+    margin: .4rem;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1rem;
+}
+
+.part .input {
+    width: 35%;
+    padding: .4rem .5rem;
+    border-radius: .3rem;
+    outline: none;
+    border: 1px solid rgb(14, 139, 223);
+}
+
+.part .input:hover {
+    border: 1px solid rgb(232, 137, 86);
+}
+
+#submit {
+    margin-left: 20rem;
+    font-size: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    outline: unset;
+    border: unset;
+    background-color: rgb(64, 141, 167);
+    border-radius: .2rem;
+    /* outline: 2px solid  rgb(64, 141, 167); */
+
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: var(--Seconday);
+    color: rgb(14, 56, 70);
+    /* outline: 2px solid rgb(39, 94, 112); */
+}
+
+
+/* newly add for merriage */
+.legend {
+    color: rgb(42, 75, 104);
+    margin: .1rem 3rem;
+    font-weight: bold;
+}
+
+.fieldset {
+    border-radius: .5rem;
+    border: 2px solid rgb(88, 86, 86);
+    margin-bottom: .5rem;
+}
+
+/* newly added */
+.content-one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-one .input,
+.content-two .input {
+    min-width: 80%;
+
+}
+
+.part {
+    min-width: 18rem;
+}
+
+.content-two {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-three {
+    margin-top: 1rem;
+    gap: 2rem;
+    display: flex;
+}
+
+.content-three .input {
+    min-width: 80%;
+}
+
+.part-gender {
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+
+/* added for login only passwd and email is entered */
+
+.login-container {
+    width: 50%;
+    padding: 2rem 2rem;
+    margin: 6rem auto;
+    margin-bottom: 6rem;
+    /* position: relative;
+    top: 4rem; */
+    align-items: center;
+    outline: 5px solid lightgrey;
+    box-shadow: .5rem .5rem .5rem black, -.5rem -.5rem .5rem black;
+    border-radius: .63rem;
+}
+
+.login-part {
+    padding: .3rem;
+    padding-left: 8rem;
+}
+
+.login-part .part input {
+    min-width: 80%;
+    margin: .5rem;
+}
+
+.login-part #submit {
+    margin-left: 1rem;
+    width: 30%;
+}
+
+
+/* please log in  */
+.please-login {
+    margin: 1rem 5rem;
+    padding: 1rem;
+    min-height: 25rem;
+    /* outline: 3px solid red; */
+    text-align: center;
+    color: rgb(10, 37, 45);
+}
+
+.please-login p {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgb(255, 89, 0);
+    background-color: rgb(42, 75, 104);
+}
+
+
+#please-link {
+    padding: .5rem 1.5rem;
+    font-size: 1.3rem;
+    background-color: rgb(64, 141, 167);
+    border-radius: .2rem;
+}
+
+#please-link:hover {
+    cursor: pointer;
+    background-color: var(--Seconday);
+    color: rgb(7, 48, 61);
+}
+
+
+/* for displaying marriage infor for the person */
+.person-container {
+    padding: .4rem .3rem;
+    margin: .4rem;
+    /* width: 90%; */
+    /* width: fit; */
+    /* padding-left: 1rem; */
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    border-radius: .3em;
+    outline: 2px solid orange;
+}
+
+.no-personal-info {
+    /* outline: 3px solid black; */
+    padding: .5rem;
+    min-height: 5rem;
+    color: rgb(114, 207, 238);
+    opacity: .5;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-info {
+    width: 80%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    outline: 2px solid lightgrey;
+    border-radius: .3rem;
+    padding: 1rem;
+    /* height: 15rem; */
+    display: grid;
+    font-size: 1.2rem;
+    color: rgb(24, 78, 126);
+    gap: .5rem;
+    grid-template-areas:
+        " I  I s s s s"
+        " I  I N N N N"
+        " I  I A A A A"
+        " I  I A A A A";
+}
+
+
+.p-image {
+    /* outline: 2px solid black; */
+    grid-area: I;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.p-image img {
+    /* outline: 3px solid rgb(251, 0, 0); */
+    /* height: ; */
+    height: 300px;
+    border-radius: .3rem;
+    /* margin-left: -1rem; */
+    /* height: 300px; */
+    /* box-shadow: .3rem .3rem .1em black; */
+}
+
+.p-name {
+    padding: .6rem;
+    grid-area: N;
+    outline: 2px solid lightgrey;
+    border-radius: .3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-name div {
+    /* outline: 2px solid green; */
+    flex-grow: 1;
+    padding: .4rem 1rem;
+}
+
+.p-ssn {
+    border: 2px solid lightgray;
+    border-radius: .3em;
+    padding-left: 1rem;
+    font-weight: bolder;
+    grid-area: s;
+}
+
+.p-actions {
+    grid-area: A;
+    height: 2rem;
+    margin-top: .3em;
+    /* outline: 2px solid brown; */
+}
+
+.p-actions form {
+    display: inline-block;
+}
+
+.p-actions .edit,
+.p-actions .delete {
+
+    padding: .4rem 1.3rem;
+    font-size: 1.1rem;
+    border-radius: .2rem;
+    /* font-weight: ; */
+    /* outline: 2px solid black; */
+    border: none;
+    background-color: rgb(128, 208, 235);
+    /* outline:2px solid rgb(52, 155, 189); */
+
+}
+
+.p-actions .edit {
+    margin-left: 5rem;
+
+}
+
+.p-actions .edit:hover {
+    cursor: pointer;
+    color: white;
+    background-color: limegreen;
+}
+
+.p-actions .delete {
+    margin-left: 4rem;
+
+}
+
+.p-actions .delete:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+}
+
+/* for footer  */
+.footer-container {
+    /* outline: 3px solid red; */
+    height: 10rem;
+    border-radius: .2rem;
+    background-color: rgb(143, 194, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+
+/*  for edit/update pages */
+.image-display {
+    width: 250px;
+    min-height: 100px;
+}
+
+/* for create acccount button */
+#create-account {
+    padding: .5rem 1rem;
+    margin-left: 6rem;
+    color: rgb(222, 129, 22);
+    font-weight: bold;
+    border-radius: .1rem;
+    outline: 1px solid rgb(222, 129, 22);
+    /* background-color: limegreen; */
+}
+
+#create-account:hover {
+    background-color: rgb(222, 129, 22);
+    color: white;
+}
+
+
+
+/* error-div */
+.error-message {
+
+    color: red;
+    width: fit-content;
+    padding: .2em 1.5em .2em 1em;
+    border-radius: .3em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    outline: 1px solid rgb(222, 129, 22);
+    height: 2.5em;
+    box-shadow: 2px 2px 5px red, -2px -2px 6px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.get-info {
+    /* height: 100vh; */
+    text-align: center;
+
+    /* padding: 2em; */
+    /* outline: 2px solid red; */
+}
+
+.get-info p {
+    /* margin-bottom: -3em; */
+    /* outline: 3px solid green; */
+    font-size: 3em;
+    padding: 1em;
+    opacity: .4;
+    color: #1e90ff;
+    font-weight: bold;
+
+}
+
+.get-info div {
+    padding: 2em;
+    font-weight: bold;
+    font-size: 4em;
+    margin-top: -2em;
+    color: rgb(42, 75, 104);
+    /* outline: 2px solid black; */
+}
+
+
+/* for choice */
+.choose-yours {
+    padding: 10em;
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+}
+
+.choose-yours a {
+    padding: .3em .5em;
+    /* font-weight: bold; */
+    border-radius: 5px;
+    margin: .1em;
+    font-size: 1.6em;
+}
+
+.choose-yours #choose-edit {
+    outline: 1px solid rgb(42, 75, 104);
+    color: rgb(42, 75, 104);
+}
+
+.choose-yours #choose-edit:hover {
+    color: white;
+    background-color: rgb(42, 75, 104);
+}
+
+.choose-yours #choose-logout {
+    outline: 1px solid rgb(255, 89, 0);
+    color: rgb(255, 89, 0);
+    padding: .3em 1em;
+}
+
+.choose-yours #choose-logout:hover {
+    color: white;
+    background-color: rgb(255, 89, 0);
+}

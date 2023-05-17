@@ -1,0 +1,169 @@
+.welcome-to {
+    height: 200px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-to h1 {
+    font-family: cursive;
+    padding: .3em;
+    font-size: 6em;
+    margin-bottom: -.1em;
+}
+
+/* main */
+.main-intro {
+    padding: 1em;
+    color: black;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border: none;
+}
+
+.main-intro:hover {
+    background: linear-gradient(90deg, rgb(252, 57, 9) 0%, rgb(240, 105, 47) 35%, rgb(213, 137, 61) 100%);
+    transition: ease 0.5s;
+    color: white;
+
+}
+
+.reco-h2 {
+    font-size: 2em;
+    padding: .3em 1em;
+    color: rgb(255, 142, 55);
+}
+
+.main-intro h1 {
+    color: rgb(42, 75, 104);
+    font-weight: bolder;
+    font-size: 5em;
+    text-align: center;
+}
+
+.main-intro h1:hover {
+    font-size: 5.5em;
+    color: white;
+    transition: ease 0.5s;
+}
+
+.main-intro h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home-container {
+    width: 100%;
+    background-color: white;
+}
+
+.home-container h2 {
+    color: white;
+}
+
+.home-part {
+
+    width: 90%;
+    padding: .3em;
+    margin: 1em auto;
+    min-height: 30em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.home-part:hover {
+    cursor: pointer;
+    box-sizing: 3em 3em 3em black;
+}
+
+.div-image {
+    margin: .2em;
+}
+
+.div-image img {
+    border-radius: .5em;
+    margin-top: 2em;
+    padding: .2em;
+    width: 95%;
+}
+
+.div-text {
+    width: 80%;
+    height: 30%;
+    margin: .2em;
+    margin-top: 2.4em;
+    border-radius: .3em;
+    background-color: rgb(218, 132, 65);
+    border-radius: 50px;
+}
+
+.div-text {
+    padding: 2em 2em;
+}
+
+.div-text:hover {
+    color: rgb(255, 89, 0);
+    background-color: rgb(42, 75, 104);
+    transition: ease .5s;
+    width: 90%;
+    height: 75%;
+}
+
+.div-text p:hover {
+    font-size: 1.5em;
+}
+
+/* last page */
+.last-home {
+    outline: 3px solid red;
+    padding: .5em;
+}
+
+.last-home h1 {
+    padding: .2em;
+    color: red;
+    margin: 1em;
+    border-top: none;
+}
+
+/* imageing */
+.one {
+    outline: 3px solid red;
+    height: 10em;
+    background-image: url("marr.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 20em;
+    margin-top: 1em;
+}
+
+.one img {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+}
+
+.aboutus img {
+    height: 100%;
+}
+
+.aboutus:hover {
+    transition: ease .5s;
+    font-size: larger;
+    position: relative;
+}
+
+.last-home {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.last-home li {
+    list-style: none;
+}
